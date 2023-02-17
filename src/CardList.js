@@ -1,9 +1,10 @@
 import { Card } from "./Card"
 
 export const CardList = (props) => {
+    const cards = props.cards
   return (
     <div>
-        {props.cards.map( card => (
+        {cards.map( (card) => (
             <Card {...card}/>
         ))}
     </div>
