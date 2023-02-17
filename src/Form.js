@@ -18,7 +18,7 @@ export const Form = (props) => {
   }
   return (
     <>
-    <form onSubmit={handleSubmit}>
+    <form className="user-form" onSubmit={handleSubmit}>
       <input
         type="text"
         value={username}
@@ -26,7 +26,7 @@ export const Form = (props) => {
         placeholder="GitHub username"
         required
       />
-      <button type="submit">Add card</button>
+      <button className="btn" type="submit">Add card</button>
     </form>
     </>
 
